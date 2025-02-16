@@ -164,3 +164,4 @@ function mutear() {
     const music = document.getElementById("music");
     music.muted = !music.muted; // Alterna el mute
 }
+
