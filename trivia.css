@@ -1,0 +1,120 @@
+/* Estilos generales para el sitio */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+    background-color: #ffe4e1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+ /* 🔥 Imagen de fondo agregada */
+ background-image: url('d823f73f68efc5be156a092e66db161f7d0da023fb77759d2860f983238e16d0.jpg'); /* Cambia esto por la imagen real */
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+}
+
+/* Título de la trivia */
+h1 {
+    color: #d63384;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Estilo del texto de las preguntas */
+#pregunta {
+    font-size: 24px;
+    margin: 20px;
+    color: #ff00bf;
+}
+
+/* Estilo para las opciones */
+#opciones button {
+    background-color: #ff69b4;
+    color: rgb(252, 252, 252);
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#opciones button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+#opciones button:active {
+    transform: scale(0.9);
+}
+
+#opciones button:focus {
+    outline: none;
+}
+
+/* Estilos para los controles de música */
+#music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#music-controls button {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#music-controls button:hover {
+    background-color: #ff69b4;
+    transform: scale(1.1);
+}
+
+#music-controls button:active {
+    transform: scale(0.9);
+}
+
+#music-controls button:focus {
+    outline: none;
+}
+
+/* Estilo del botón de volver */
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:focus {
+    outline: none;
+}

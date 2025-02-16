@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Galería</title>
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <!-- Música de fondo -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+
+    <h1>Nuestra Galería</h1>
+
+    <!-- Contenedor de las imágenes -->
+    <div class="gallery">
+        <!-- Cada imagen y su descripción -->
+        <div class="gallery-item">
+            <img src="1.jpg" alt="Descripción de la imagen 1">
+            <p>no tengo palabras para describir lo hermosa que te ves</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="2.jpg" alt="Descripción de la imagen 2">
+            <p>pero sabes que tu eres el brillo de mis ojos </p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="3.jpg" alt="Descripción de la imagen 3">
+            <p>me encanta tu carita bella, no tiene comparacion</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="4.jpg" alt="Descripción de la imagen 4">
+            <p>amor de verdad que soy el mayor fan de tu carita</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="5.jpg" alt="Descripción de la imagen 5">
+            <p>eres lo mas hermoso que este mundo pudo crear</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="6.png" alt="Descripción de la imagen 6">
+            <p>podria pasar horas y nunca dejaria de apreciarte</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="7.jpg" alt="Descripción de la imagen 7">
+            <p>eres arte y como te digo siempre solo yo te se apreciar bien</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="8.jpg" alt="Descripción de la imagen 8">
+            <p>vales mucho, ni si quiera se compara a nada existente</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="9.jpg" alt="Descripción de la imagen 9">
+            <p>quiero esos ojitos siempre me vean a mi</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="10.jpg" alt="Descripción de la imagen 10">
+            <p>amor me encanta como tus ojos resaltan tu bello rostro</p>
+        </div>
+        <div class="gallery-item">
+            <img src="11.jpg" alt="Descripción de la imagen 11">
+            <p>me encantas hasta que mi corazon deje de latir, ni eso</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="12.jpg" alt="Descripción de la imagen 12">
+            <p>eres muy hermosa, quiero estar contigo toda mi vida</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="13.png" alt="Descripción de la imagen 13">
+            <p>siempre te pasas en mi mente la mayoria del tiempo</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="15.jpg" alt="Descripción de la imagen 15">
+            <p>en tus ojos encontre mi refujio</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="16.jpg" alt="Descripción de la imagen 16">
+            <p>y tu alma quiero que se conecte a la mia, siempre quiero ser tu unico amor</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="17.jpg" alt="Descripción de la imagen 17">
+            <p>esa sonrisa tuya es capaz de sacarle la sonrisa a todos</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="18.jpg" alt="Descripción de la imagen 18">
+            <p>gracias por ser la luz de mi vida</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="19.jpg" alt="Descripción de la imagen 19">
+            <p>quieres casarte conmigo? me harias el hombre mas feliz del mundo?</p>
+        </div>
+    </div>
+
+    <!-- Controles de música -->
+    <div id="music-controls">
+        <button onclick="toggleMusic()">⏸️</button>
+        <button onclick="bajarVolumen()">🔈</button>
+        <button onclick="subirVolumen()">🔊</button>
+        <button onclick="mutear()">🔇</button>
+    </div>
+
+    <button onclick="irA('index.html')">Volver</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

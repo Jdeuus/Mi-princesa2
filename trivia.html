@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="trivia.css">
+</head>
+<body>
+    <!-- Música de fondo -->
+    <audio id="music" loop>
+        <source src="Elvis Presley - Can't Help Falling In Love (Sub español).mp3" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+
+    <h1>Trivia sobre nosotros</h1>
+    <div id="pregunta"></div>
+    <div id="opciones"></div>
+
+    <!-- Controles de música -->
+    <div id="music-controls">
+        <button onclick="toggleMusic()">⏸️</button>
+        <button onclick="bajarVolumen()">🔈</button>
+        <button onclick="subirVolumen()">🔊</button>
+        <button onclick="mutear()">🔇</button>
+    </div>
+
+    <br>
+    <button onclick="irA('index.html')">Volver</button>
+
+    <script src="script.js"></script>
+    <script src="trivia.js"></script>
+</body>
+</html>

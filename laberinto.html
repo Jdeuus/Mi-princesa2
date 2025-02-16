@@ -1,0 +1,29 @@
+<!DOCT<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto</title>
+    <link rel="stylesheet" href="laberinto.css">
+    <!-- Música de fondo -->
+    <audio id="music" loop>
+        <source src="luz.mp3" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+</head>
+<body>
+    <h1>Encuentra el camino hacia mí</h1>
+    <canvas id="laberinto" width="1100" height="600"></canvas>
+    <br>
+    <button onclick="irA('index.html')">Volver</button>
+    <div>
+        <!-- Controles de música -->
+        <button onclick="toggleMusic()">⏸️</button>
+        <button onclick="bajarVolumen()">🔈</button>
+        <button onclick="subirVolumen()">🔊</button>
+        <button onclick="mutear()">🔇</button>
+    </div>
+    <script src="laberinto.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Estilos generales para el sitio */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+    background-color: #ffe4e1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('aladin.jpg'); /* Asegúrate de que la ruta de la imagen esté correcta */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Título de la historia */
+h1 {
+    color: #f8f6f7;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Estilo del texto de la historia */
+#historia-texto {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 8px;
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+/* Estilo del botón de volver */
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilos para los controles de música */
+#music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#music-controls button {
+    margin: 0 10px;
+}

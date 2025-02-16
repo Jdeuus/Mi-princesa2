@@ -1,0 +1,114 @@
+/* Estilos generales para el sitio */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+    background-color: #ffe4e1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('universo.jpg'); /* Asegúrate de que la ruta de la imagen esté correcta */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Título de la galería */
+h1 {
+    color: #d63384;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Galería en formato de grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    gap: 30px; /* Espacio entre las imágenes */
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+/* Estilo de cada item de la galería */
+.gallery-item {
+    position: relative;
+    overflow: hidden; /* Cambié a hidden para evitar que las imágenes sobresalgan */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra las imágenes dentro del contenedor */
+    height: 200px; /* Asegúrate de que los items tengan suficiente altura */
+    width: 100%; /* Se ajusta al 100% del contenedor padre */
+}
+
+/* Tamaño fijo para todas las imágenes */
+.gallery-item img {
+    width: 100%; /* Se ajusta al 100% del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Estilos para los controles de música */
+#music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#music-controls button {
+    margin: 0 10px;
+}
+
+/* Botones */
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:focus {
+    outline: none;
+}

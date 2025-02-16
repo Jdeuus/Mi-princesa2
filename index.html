@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Música de fondo -->
+    <audio id="music" loop>
+        <source src="Evangeline-La princesa y el sapo Canción (video no mío) @SrLeoPardoQuiz.mp3" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1>Javi y Moondragon</h1>
+    
+    <!-- Contenido principal de la página -->
+    <div id="main-content">
+        <div><button onclick="window.location.href='historia.html'">Nuestra Historia comienza aqui</button></div>
+        <div><button onclick="window.location.href='galeria.html'">Galería</button></div>
+        <div><button onclick="window.location.href='laberinto.html'">Mini Juego</button></div>
+        <div><button onclick="window.location.href='trivia.html'">Trivia</button></div>
+    </div>
+
+    <!-- Controles de música -->
+    <div id="music-controls">
+        <button onclick="toggleMusic()">⏸️</button>
+        <button onclick="bajarVolumen()">🔈</button>
+        <button onclick="subirVolumen()">🔊</button>
+        <button onclick="mutear()">🔇</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
